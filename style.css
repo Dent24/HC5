@@ -50,7 +50,7 @@ nav a {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  margin: 30px auto;
+  margin: 50px auto;
   width: 1200px;
   overflow: hidden;
 }
@@ -64,7 +64,7 @@ nav a {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  margin: 30px auto;
+  margin: 50px auto;
   width: 1200px;
   overflow: hidden;
       grid-template-areas: "text pic";
