@@ -88,4 +88,10 @@ nav a {
   width: 1200px;
   margin: 0 auto;
 }
+
+footer {
+  text-align: center;
+  padding: 150px 0px 30px;
+  color: #454483;
+}
 /*# sourceMappingURL=style.css.map */
