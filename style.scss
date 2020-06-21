@@ -1,0 +1,77 @@
+$color-blue: #454483;
+$color-black-33: #00000033;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/background.jpg);
+    background-size: 1000px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+    padding: 30px 20px;
+    align-items: baseline;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    background: #ffffff55;
+    border-bottom: 1px solid $color-black-33;
+
+    #logo{
+        font-size: 24px;
+        font-weight: 500;
+        color: $color-blue;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color-blue;
+    }
+}
+
+#banner{
+    img{
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@mixin section-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px auto;
+    width: 1200px;
+    
+    img{
+        width: 100%;
+    }
+}
+
+#about{
+    @include section-box();
+}
+
+#product{
+    @include section-box();
+    grid-template-areas: "text pic";
+
+    *:nth-child(1){
+        grid-area: pic;
+    }
+
+    *:nth-child(2){
+        grid-area: text;
+    }
+}
+
+#brand{
+    width: 1200px;
+    margin: 0 auto;
+}

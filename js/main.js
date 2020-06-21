@@ -1,7 +1,10 @@
-AOS.init();
-
 $('#banner').slick({
-    dots: true,
+    autoplay: true,
+    autoplaySpeed: 1500
 });
 
-$('#brand').slick();
+$('#brand').slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    dots: true
+});
